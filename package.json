@@ -1,0 +1,22 @@
+{
+  "name": "e-commerce-product-page",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/khafidhasukma/e-commerce-product-page.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/khafidhasukma/e-commerce-product-page/issues"
+  },
+  "homepage": "https://github.com/khafidhasukma/e-commerce-product-page#readme",
+  "dependencies": {
+    "bootstrap": "^5.2.2"
+  }
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend Mentor | E-commerce product page</title>
+    <link rel="stylesheet" href="src/css/style.css" />
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="container">
+      <div class="py-4 border-bottom navbar navbar-expand-lg position-sticky">
+        <a class="navbar-brand" href="#">
+          <img src="src/images/logo.svg" alt="" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Collections</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Men</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Women</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+          <div class="d-flex gap-4">
+            <img src="src/images/icon-cart.svg" width="30" alt="" />
+            <img src="src/images/image-avatar.png" width="30" alt="" />
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- End Navbar -->
+
+    <!-- Content -->
+    <section id="content">
+      <div class="container">
+        <div class="row d-flex flex-column flex-md-row align-items-center">
+          <div class="col-12 col-md-6">
+            <div class="image_primary">
+              <img src="src/images/image-product-1.jpg" class="main_img" width="100%" alt="" />
+              <div class="image_product d-flex gap-3 mt-3 justify-content-between">
+                <img src="src/images/image-product-1.jpg" onclick="changeImage(this)" class="img_1 active" width="90" alt="" />
+                <img src="src/images/image-product-2.jpg" onclick="changeImage(this)" class="img_2" width="90" alt="" />
+                <img src="src/images/image-product-3.jpg" onclick="changeImage(this)" class="img_3" width="90" alt="" />
+                <img src="src/images/image-product-4.jpg" onclick="changeImage(this)" class="img_4" width="90" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="content_desc">
+              <h6 class="content_subtitle">SNEAKER COMPANY</h6>
+              <h1 class="title">Fall Limited Edition Sneakers</h1>
+              <p class="subtitle">These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+              <div class="d-flex gap-4 align-items-center">
+                <h3 class="price mb-0">$125.00</h3>
+                <p class="discon mb-0">50%</p>
+              </div>
+              <div class="strike_price">
+                <del> $250.00 </del>
+              </div>
+              <div class="d-flex gap-2 align-items-center justify-content-between">
+                <div class="btn-group" role="group" aria-label="Basic example">
+                  <button type="button" class="btn-qty btn_minus">
+                    <img src="src/images/icon-minus.svg" alt="" />
+                  </button>
+                  <span class="btn-qty mb-0 num">1</span>
+                  <button type="button" class="btn-qty btn_plus">
+                    <img src="src/images/icon-plus.svg" alt="" />
+                  </button>
+                </div>
+
+                <button class="btn-cart d-flex gap-4 align-items-center">
+                  <img src="src/images/icon-cart.svg" class="icon_cart" width="20" alt="" />
+                  <p class="mb-0">Add to cart</p>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Content -->
+
+    <script src="src/js/script.js"></script>
+  </body>
+</html>
